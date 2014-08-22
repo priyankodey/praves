@@ -308,7 +308,7 @@ img {
   vertical-align: middle;
 }
 .img-responsive {
-  display: block;
+  display: inline-block;    /*changed*/
   max-width: 100%;
   height: auto;
 }
@@ -2355,7 +2355,7 @@ input[type="button"].btn-block {
   display: none;
 }
 .collapse.in {
-  display: block;
+  display: inline;     /*changed*/
 }
 .collapsing {
   position: relative;
@@ -2367,8 +2367,8 @@ input[type="button"].btn-block {
 @font-face {
   font-family: 'Glyphicons Halflings';
 
-  src: url('../fonts/glyphicons-halflings-regular.eot');
-  src: url('../fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../fonts/glyphicons-halflings-regular.woff') format('woff'), url('../fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../assets/glyphicons-halflings-regular.eot');
+  src: url('../assets/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../assets/glyphicons-halflings-regular.woff') format('woff'), url('../assets/glyphicons-halflings-regular.ttf') format('truetype'), url('../assets/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .glyphicon {
   position: relative;
@@ -3822,7 +3822,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 }
 @media (min-width: 768px) {
   .navbar-nav {
-    float: left;
+    float: left;      
     margin: 0;
   }
   .navbar-nav > li {
@@ -4026,7 +4026,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #333;
 }
 .navbar-inverse {
-  background-color: #DDD7D7;    /*changed*/
+  background-color: #222;   
   border-color: #080808;
 }
 .navbar-inverse .navbar-brand {
@@ -4041,7 +4041,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   color: #999;
 }
 .navbar-inverse .navbar-nav > li > a {
-  color: #000000;                    /*changed*/
+  color: #999;                    
 }
 .navbar-inverse .navbar-nav > li > a:hover,
 .navbar-inverse .navbar-nav > li > a:focus {
@@ -4052,7 +4052,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
 .navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
   color: #fff;
-  background-color: #3F3838;    /* changed*/
+  background-color: #080808;    
   height: 65px;                 /*changed*/
 }
 .navbar-inverse .navbar-nav > .disabled > a,

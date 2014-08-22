@@ -1,73 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Our professional mobile apps developers build a custom mobile application for  your business. Contact Us  today for free quote and discount.">
-    <meta name="author" content="Praves technologies">
   
-    <!-- <link rel="shortcut icon" href="/assets/favicon.ico"> -->
-    <!-- <link rel ="icon" type="image/ico" href= "/assets/favicon.ico"> -->
-    <link rel="stylesheet" type="image/png" href="/assets/career2.png">
-
-    <title>Moblie App Development Company |  Business  Apps Developer - Praves Technologies</title>
-
-    <!-- Bootstrap core CSS -->
-    <link href="/assets/bootstrap.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="/assets/main.css" rel="stylesheet">
-    <link rel="stylesheet" href="/assets/icomoon.css">
-    <link href="/assets/animate-custom.css" rel="stylesheet">
-    <link href="/assets/contact.css" rel="stylesheet">
-
-
-    
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Raleway:400,300,700' rel='stylesheet' type='text/css'>
-    
-    <script src="/assets/jquery.min.js"></script>
-	<script type="text/javascript" src="/assets/modernizr.custom.js"></script>
-    
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-    <!--[if lt IE 9]>
-      <script src="/assets/html5shiv.js"></script>
-      <script src="/assets/respond.min.js"></script>
-    <![endif]-->
-  </head>
 
   <body data-spy="scroll" data-offset="0" data-target="#navbar-main">
+
+<!-- ==== MODAL ==== -->
+  				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+						<div class="modal-dialog">
+						      <div class="modal-content">
+						        <div class="modal-header">
+						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+						          <h4 class="modal-title">Get a Quotation</h4>
+						        </div>
+						        <div class="modal-body">
+	<div class="row">
+		<div class="col-lg-12 head-bg1">
+
+			<form action="" method="POST" enctype="multipart/form-data" id="form_id">
+    <div class="form-group">
+        <h5><label for="inputName">Name</label></h5>
+        <input type="text" name="career[name]" class="form-control" tabindex="1" placeholder="Enter your name" pattern="[a-zA-Z. ]{1,50}" required>
+    </div>
+    <div class="form-group">
+        <h5><label for="inputEmail">Email</label></h5>
+        <input type="email" name="career[email]" class="form-control" tabindex="2" placeholder="Enter your email address" required>
+    </div>
+    <div class="form-group">
+        <h5><label for="inputMobile">Mobile</label></h5>
+        <input type="tel" name="career[mobile]" class="form-control" tabindex="3" placeholder="Enter your mobile number" pattern="[0-9]{10}" maxlength="10" required>
+    </div>
+    <div class="form-group">
+        <h5><label for="inputMessage">Message</label></h5>
+        <input type="text" name="career[message]" class="form-control" tabindex="4" placeholder="Write your details" required>
+    </div>  
+
+
+    <button type="submit" name="submit" class="btn btn-primary btn-block" tabindex="5">Submit</button>
+</form>
+			
+  		</div>
+  	</div>	
+						          
+						        </div>
+						        <!-- <div class="modal-footer">
+						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+						        </div> -->
+						      </div>
+						 </div>
+				</div>
   
-  
+<!-- ==== NAVBAR ==== -->  
+
   	<div id="navbar-main">
       <!-- Fixed navbar -->
     <div class="navbar navbar-inverse navbar-fixed-top">
-    	<div>
-     <a href = "/" class = "nav navbar-nav navbar-left"><%= image_tag("logo.png",size:"177x65", alt: "logo") %></a>
-        </div>
+    	
       <div class="container">
         <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="icon icon-shield" style="font-size:30px; color:#3498db;"></span>
-          </button>
-          
-          <!-- <a class="navbar-brand hidden-xs hidden-sm" href="#home"><span class="icon icon-shield" style="font-size:18px; color:#3498db;"></span></a> -->
+        	<div class="row">
+        	<div class="col-xs-2">
+        	<a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary hidden-sm hidden-md hidden-lg" id="navbar_quote_collapse"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a>
         </div>
-        <div class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            
-			<li> <a href="#headerwrap" class="smoothScroll" style="margin-left: 10px;"> Home </a></li>
-			<li> <a href="#about" class="smoothScroll"> About </a></li>
-			<li> <a href="#services" class="smoothScroll"> Services </a></li>
-			<li> <a href="#technologies" class="smoothScroll"> Technologies </a></li>
-			<li> <a href="#clients" class="smoothScroll"> Clients </a></li>
-			<li> <a href="#career" class="smoothScroll"> Career </a></li>
-			<li> <a href="#community" class="smoothScroll"> Community </a></li>
-			<li> <a href="#industries" class="smoothScroll"> Industries </a></li>
-			<li> <a href="#contact" class="smoothScroll"> Contact </a></li>
+        
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span>  <%= image_tag("favicon.ico", size:"45x45",  alt: "logo") %></span>
+          </button>
+      
+          </div>
+          <a id="navbar_logo" class="navbar-brand hidden-xs" href="/"><span>  <%= image_tag("favicon.ico", size:"45x45",  alt: "logo") %></span></a>
+        </div>
 
-			<li id="reg-id"><a target="_blank" class="regular-link" href="/static_pages/index" title="Next Section"><span class="icon icon-lock"></span> <span class="text">Register</span></a></li>
-            <li id="login-id"><a target="_blank" class="regular-link" href="/static_pages/index" title="Next Section"><span class="icon icon-user"></span> <span class="text">Log In</span></a></li>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">            
+			<li> <a href="#home" class="smoothScroll" id="navbar_color1"> Home </a></li>
+			<li> <a href="#about" class="smoothScroll" id="navbar_color2"> About </a></li>
+			<li> <a href="#services" class="smoothScroll" id="navbar_color1"> Services </a></li>
+			<li> <a href="#technologies" class="smoothScroll" id="navbar_color2"> Technologies </a></li>
+			<li> <a href="#clients" class="smoothScroll" id="navbar_color1"> Clients </a></li>
+			<li> <a href="#career" class="smoothScroll" id="navbar_color2"> Career </a></li>
+			<!-- <li> <a href="#team" class="smoothScroll" id="navbar_color1"> Team </a></li> -->
+			<li> <a href="#contact" class="smoothScroll" id="navbar_color2"> Contact </a></li>
+			
+			<li> <a data-toggle="modal" href="#myModal"><button type="button"  class=" btn btn-primary hidden-xs" id="navbar_quote"><span class="icon icon-pencil-2"></span> <span class="text">Get a Quote</span></button></a></li>
+
+			
         </ul>
         </div><!--/.nav-collapse -->
 
@@ -75,232 +91,272 @@
     </div>
     </div>
 
-  
-  
-		<!-- ==== HEADERWRAP ==== -->
+
+<!-- === Close responsive navbar automatically ==== -->
+  <script type="text/javascript">
+$('.navbar-collapse').click('li', function() {
+  $('.navbar-collapse').collapse('hide');
+});
+  </script>
+
+
+<!-- ==== HEADERWRAP  OR HOME ==== -->
+
+ <div id="home" name="home"> 
+
+<div id="home_carousel">
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+    	<div id="h_bg">
+      <img class="img-responsive" src="/assets/home_bg1.jpg" alt="Background" width="100%" height="615px">
+  </div>
+    </div>
+    <div class="item">
+    	<div id="h_bg">
+      <img class="img-responsive" src="/assets/home_bg2.jpg" alt="Background" width="100%" height="615px">
+  </div>
+    </div>
+    
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div>
+</div>
+<!-- Carousel end -->
+</div>
 	    
-	        <div class="container" id="headerwrap" name="home">
-               
-                <div class="row white">
+	        <!-- <div class="container" id="headerwrap" name="headerwrap">               
                 	
 			<header class="clearfix">
-	  		 		<!-- <h1><span class="icon icon-shield"></span></h1>
-	  		 		<p>A Bootstrap 3 One Page Theme.</p>
-	  		 		<p>Exclusive for BlackTie.co.</p> -->
+	  <h1><span><br><a href = "/"><%= image_tag("logo.png",size:"283x104", alt: "logo", class: 'img-responsive') %></a></span></h1>
+
+	  		 		<p>Solutions for all kind of Businesses, any size, anywhere with Mobile App & Responsive Web Design.</p>
+	  		 		
 	  		</header>
 	  		        
-	  		    </div>   
-	        </div>
-	    
-
-		<!-- ==== GREYWRAP ==== -->
-		<div id="service_home">
-		<div id="greywrap">
-			<div class="row">
-				<div class="col-lg-3 callout">
-					<%= image_tag("service_sap.png",size:"60x60", alt: "SAP Solutions") %>
-					<a href="#"><h5>SAP Solutions & Consulting</h5></a>
-				</div>
-					
-				<div class="col-lg-3 callout">
-					<%= image_tag("service_software.png",size:"60x60", alt: "Software Testing") %>
-					<a href="#"><h5>Software Testing & QA</h5></a>
-				</div>
-				
-				<div class="col-lg-3 callout">
-					<%= image_tag("service_mobile.png",size:"60x60", alt: "Mobile-App") %>
-					<a href="#"><h5>Mobile Apps & Web Development</h5></a>
-				</div>
-
-				<div class="col-lg-3 callout">
-					<%= image_tag("service_e_learning.png",size:"60x60", alt: "E-Learning") %>
-					<a href="#"><h5>E-Learning & Classroom Training</h5></a>
-				</div>
-
-			</div>
-		</div>   <!-- greywrap -->
-	</div>
+	  		      
+	        </div> -->		
 		
 		
 <!-- ==== ABOUT ==== -->
 		<div class="container" id="about" name="about">
-			<div class="row white">
-			<br><br>
-				<h1 class="centered">A LITTLE ABOUT OUR AGENCY</h1>
+		    <div class="row white top-buffer">
+			  <div class="col-lg-12"></div>
+				<h2 class="centered">A LITTLE ABOUT US</h2>
 				<hr>
+			  <div class="col-lg-12 col-sm-12 blog-content">
+				<div align="justify" class="col-lg-6 col-sm-6">
+					<p>We are a team of motivated individuals who care to grow your business with our Software technology expertise. We understand and analyse your business and then consult you with right technology to make your business more efficient, effective and profitable.</p>
+				</div>
 				
-				<div align="justify" class="col-lg-6">
-					<p>'PRAVES Technologies Ltd' is a Canada based company which provides services in SAP Consulting, Mobile App & Web Development, Software Testing and e-learning system development for businesses across the globe. We also have technical expertise in ‘Geographical Information Systems’ and ‘Data Analytics’. Our team of consultants and technologists always strive to achieve rational solutions to meet your business needs.”</p>
-				</div><!-- col-lg-6 -->
-				
-				<div align="justify" class="col-lg-6">
-					<p> We deliver corporate classroom training, online training as well as a ‘Technical Skill Upgrade’ program which is exclusively aimed at university students. We use innovative e-learning content and solutions, specifically designed to enhance effective learning. Our Mantra for growth is to deliver best of our knowledge and experience the right way, on time and on budget. We don’t believe in just building a software system for you, but strive to deliver you a solution after understanding your business problems and opportunities.</p>
-				</div><!-- col-lg-6 -->
-			</div><!-- row -->
-		
+				<div align="justify" class="col-lg-6 col-sm-6">
+					<p> We help businesses understand the importance of fast growing mobile technologies and how these technologies can work in favor of their business. We live by the philosophy of not building a business but a relationship with immense respect for the client and their business. We don’t believe in just building a software system for you, but strive to deliver you a solution after understanding your business problems and opportunities.</p>
+				</div>
+			  </div>
+		    </div>		
 		</div><!-- container -->
 		<!-- ==== SECTION DIVIDER1 -->
-		<section class="section-divider textdivider divider1" id="about_section_divider">
+		<section class="section-divider textdivider divider1">
 			<!-- <div class="container"> -->
 				<h1>INTEGRITY. PEOPLE. PERFORMANCE.</h1>
 				<hr>
-				<p>You can rely on us for high quality of deliverable and successful implementation.</p>
+				<p><b>We have the solution to all your business problems.</b></p>
 			<!-- </div> --><!-- container -->
 		</section><!-- section -->
 		
 		
 <!-- ==== SERVICES ==== -->
 		<div class="container" id="services" name="services">
-			<br>
-			<br><br><br>
-			<div class="row">
+			
+			<div class="row top-buffer">
 				<h2 class="centered">OUR SERVICES</h2>
 				<hr>
-				<br>
 				<div id="greywrap">
 				<div class="row">
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_sap.png",size:"60x60", alt: "SAP Solutions") %>
-					<a href="#"><h3>SAP PRACTICES</h3></a>
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
+					<a href="/static_pages/services/#mobile_app"><i class="back_effect">
+					<%= image_tag("service_mobile.png",size:"60x60", alt: "Mobile App Development" , class: 'img-responsive') %></i>
+					<h4>Mobile App Development (iOS and Android)</h4></a>
 				</div>
-					
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_mobile.png",size:"60x60", alt: "Mobile-App") %>
-					<a href="#"><h3>MOBILE APP & WEB DEVELOPMENT</h3></a>
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
+					<a href="/static_pages/services/#res_web_des"><i class="back_effect">
+					<%= image_tag("service_responsive_design.png",size:"80x60", alt: "Responsive Web Design" , class: 'img-responsive') %></i>
+					<h4>Responsive Web Design and Development</h4></a>
 				</div>
-				
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_e_learning.png",size:"60x60", alt: "E-Learning") %>
-					<a href="#"><h3>E-LEARNING CONTENT DEVELOPMENT</h3></a><br><br>
-				</div>
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
+					<a href="/static_pages/services/#mobile_market"><i class="back_effect">
+					<%= image_tag("service_mobile_marketing.png",size:"60x60", alt: "Mobile Marketing" , class: 'img-responsive') %></i>
+					<h4>Mobile Marketing and Solutions</h4></a><br>
+				</div>		
 
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_software.png",size:"60x60", alt: "Software Testing") %>
-					<a href="#"><h3>SOFTWARE TESTING & QA</h3></a>
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
+					<a href="/static_pages/services/#software"><i class="back_effect">
+					<%= image_tag("service_software.png",size:"60x60", alt: "Software Development" , class: 'img-responsive') %></i>
+					<h4>Custom Software Development</h4></a>
 				</div>
 					
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_corporate.png",size:"60x60", alt: "Corporate Training") %>
-					<a href="#"><h3>CORPORATE TRAINING</h3></a>
+				
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
+					<a href="/static_pages/services#graphic_des"><i class="back_effect">
+					<%= image_tag("service_graphics.png",size:"60x60", alt: "Graphic Design" , class: 'img-responsive') %></i>
+					<h4>Graphic Design and Development</h4></a>
 				</div>
 				
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_GIS.png",size:"60x60", alt: "GIS service") %>
-					<a href="#"><h3>GIS SERVICE</h3></a><br>
+				<div class="col-sm-4 col-lg-4 callout" id="greywrap_link">
+					<a href="/static_pages/services/#web_app"><i class="back_effect">
+					<%= image_tag("service_webapp.png",size:"60x60", alt: "Web App Development" , class: 'img-responsive') %></i>
+					<h4>WebApp Development</h4></a>
 				</div>
 			</div>
 			</div>
-			</div><!-- row -->
-			<br><br><br>
-			<!-- <div class="row">
-				<h2 class="centered">MOBILE FIRST THINKING, ALWAYS.</h2>
-				<hr>
-				<br>
-				<div class="col-lg-offset-2 col-lg-8">
-					<img class="img-responsive" src="/assets/iphone.png" alt="">
-				</div>
-			</div> -->
-
-			<!-- row -->
-		</div><!-- container -->
+			</div>			
+		</div>
 		<!-- ==== SECTION DIVIDER2 -->
 		 <section class="section-divider textdivider divider2">
-			<div class="container">
+			<!-- <div class="container"> -->
 				<h1>WE ARE HERE TO PROVIDE EXPERTISE</h1>
 				<hr>
-				<p>To develop a deeper and more meaningful connection with consumers, we believe design must invite them to take part in the conversation.</p>
-			</div>
+				<p><b>We don’t believe in just building a software system, but we strive to deliver you a solution.</b></p>
+			<!-- </div> -->
 		</section> <!-- section -->
 		
 
 <!-- ==== TECHNOLOGIES ==== -->
 		<div class="container" id="technologies" name="technologies">
-		<br><br><br><br>
-			<div class="row">
+			<div class="row top-buffer">
 				<h2 class="centered">TECHNOLOGIES</h2>
 				<hr>
-				<br>
 				<div id="greywrap">
 				<div class="row">
-				<div class="col-lg-4 callout">
-					<%= image_tag("service_sap.png",size:"60x60", alt: "SAP Solutions") %>
-					<a href="#"><h3>SAP PRACTICES</h3></a>
+				<div class="col-sm-3 col-lg-3 callout" id="greywrap_link1">
+					<i class="back_effect">
+					<%= image_tag("techno_windows_ iphone_android.png",size:"60x60", alt: "Mobile-App" , class: 'img-responsive') %></i>
+					<h3>Mobile:</h3><h5> iOS and Android</h5>
 				</div>
 					
-				<div class="col-lg-4 callout">
-					<%= image_tag("techno_windows_ iphone_android.png",size:"60x60", alt: "Mobile-App") %>
-					<a href="#"><h3>I-PHONE AND ANDROID PLATFORM</h3></a>
+				<div class="col-sm-3 col-lg-3 callout" id="greywrap_link1">
+					<i class="back_effect">
+					<%= image_tag("techno_cloud.png",size:"60x60", alt: "Cloud Platforms" , class: 'img-responsive') %></i>
+					<h3>Cloud Platforms:</h3><h5> Google Cloud, Amazon Web Services, Windows Azure and more</h5>
 				</div>
 				
-				<div class="col-lg-4 callout">
-					<%= image_tag("techno_adobe_captivate.png",size:"60x60", alt: "E-Learning") %>
-					<a href="#"><h3>ADOBE CAPTIVATE</h3></a><br><br>
+				<div class="col-sm-3 col-lg-3 callout" id="greywrap_link1">
+					<i class="back_effect">
+					<%= image_tag("techno_web-tech.png",size:"60x60", alt: "Web Technologies" , class: 'img-responsive') %></i>
+					<h3>Web Technologies: </h3><h5>HTML5, CSS3, PHP Framework, NodeJS, Microsoft ,NET</h5>
 				</div>
 
-				<div class="col-lg-7 callout">
-					<%= image_tag("techno_softwarre_testing.png",size:"60x60", alt: "Software Testing") %>
-					<a href="#"><h3>HP,RATIONAL TESTING TOOLS</h3></a>
-				</div>
-					
-				<div class="col-lg-2 callout">
-					<%= image_tag("techno_arcgis.png",size:"100x60", alt: "Corporate Training") %>
-					<a href="#"><h3>ArcGIS TOOL</h3></a>
-				</div>
+				<div class="col-sm-3 col-lg-3 callout" id="greywrap_link1">
+					<i class="back_effect">
+					<%= image_tag("techno_web_cms.png",size:"60x60", alt: "Web CSM" , class: 'img-responsive') %></i>
+					<h3>Web CMS:</h3><h5> Wordpress, Joomla, Drupal</h5>
+				</div>					
 				
 			</div>
 			</div>
 			</div><!-- row -->
-		<br>
 
      </div><!-- container -->
+     <!-- ==== SECTION DIVIDER3 -->
+		 <section class="section-divider textdivider divider3">
+			<!-- <div class="container"> -->
+				<h1>INNOVATIVE TECHNOLOGY SOLUTIONS</h1>
+				<hr>
+				<p><b>You can rely on us for high quality of deliverable and successful implementation.</b></p>
+			<!-- </div> -->
+		</section> <!-- section -->
 
 <!-- ==== CLIENTS ==== -->
 		<div class="container" id="clients" name="clients">
-			
-			<br><br><br>
-			<div class="row white centered">
-				<h1 class="centered">MEET OUR AWESOME CLIENTS</h1>
+			<div class="row white centered top-buffer">
+				<h2 class="centered">MEET OUR AWESOME CLIENTS</h2>
 				<hr>
-				<br>
-				<br><br>
-				<div class="col-lg-3 centered">
-					<a href="http://www.spiriteinfosystem.com/" target = "_blank"><img class="img" src="/assets/clientlogo1.jpg" height="120px" width="160px" alt="">
-					<br>
-					<h5><b>SPIRITE INFOSYSTEM</b></h5></a>
-					
-				</div><!-- col-lg-3 -->
-				
-				<div class="col-lg-3 centered">
-					<a href="http://www.westworks.ca/" target="_blank"><img class="img" src="/assets/clientlogo2.jpg" height="120px" width="160px" alt="">
-					<br>
-					<h5><b>WEST WORKS</b></h5></a>
-					<!-- <a href="#" class="icon icon-twitter"></a>
-					<a href="#" class="icon icon-facebook"></a>
-					<a href="#" class="icon icon-flickr"></a> -->
-	
-				</div><!-- col-lg-3 -->
-				
-				<div class="col-lg-3 centered">
-					<a href="http://www.motileplus.com/" target="_blank"><img class="img" src="/assets/clientlogo3.jpg" height="120px" width="160px" alt="">
-					<br>
-					<h5><b>MOTILE PLUS</b></h5></a>
-					
-				</div><!-- col-lg-3 -->
-				
-				<div class="col-lg-3 centered">
-					<a href="http://www.altimetrik.com/" target="_blank"><img class="img" src="/assets/clientlogo4.png" height="120px" width="160px" alt="">
-					<br>
-					<h5><b>ALTIMETRIK</b></h5></a>
-					
-				</div><!-- col-lg-3 -->
+
+				<div class="col-sm-12 col-md-12 col-lg-12" id="client_carousel">    
+    <div class="well">     
+    <div id="myCarousel" class="carousel slide">     
+    <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+    </ol>
+     
+    <!-- Carousel items -->
+    <div class="carousel-inner">
+        
+    <div class="item active">
+        <div class="row-fluid">          
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 centered">
+          <a href="http://www.spiriteinfosystem.com/" target="_blank"><%= image_tag("clientlogo1.jpg", size: "160x120", alt: "SPIRITE INFOSYSTEM", class: 'img img-responsive') %><h5><b>SPIRITE INFOSYSTEM</b></h5></a>
+        </div> 
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 centered">
+          <a href="http://www.westworks.ca/" target="_blank"><%= image_tag("clientlogo2.jpg", size: "160x120", alt: "WEST WORKS", class: 'img img-responsive') %><h5><b>WEST WORKS</b></h5></a>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 centered">
+          <a href="http://www.motileplus.com/" target="_blank"><%= image_tag("clientlogo3.jpg", size: "160x120", alt: "MOTILE PLUS", class: 'img img-responsive') %><h5><b>MOTILE PLUS</b></h5></a>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 centered">
+          <a href="http://www.altimetrik.com/" target="_blank"><%= image_tag("clientlogo4.png", size: "160x120", alt: "ALTIMETRIK", class: 'img img-responsive') %><h5><b>ALTIMETRIK</b></h5></a>
+        </div>
+     
+
+        </div><!--/row-fluid-->
+    </div><!--/item-->
+     
+    <div class="item">
+        <div class="row-fluid">
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 centered">
+          <a href="http://www.spiriteinfosystem.com/" target="_blank"><%= image_tag("clientlogo1.jpg", size: "160x120", alt: "SPIRITE INFOSYSTEM", class: 'img img-responsive') %><h5><b>SPIRITE INFOSYSTEM</b></h5></a>
+        </div>       
+
+          <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 centered">
+          <a href="http://www.westworks.ca/" target="_blank"><%= image_tag("clientlogo2.jpg", size: "160x120", alt: "WEST WORKS", class: 'img img-responsive') %><h5><b>WEST WORKS</b></h5></a>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 centered">
+          <a href="http://www.motileplus.com/" target="_blank"><%= image_tag("clientlogo3.jpg", size: "160x120", alt: "MOTILE PLUS", class: 'img img-responsive') %><h5><b>MOTILE PLUS</b></h5></a>
+        </div>
+        <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3 centered">
+          <a href="http://www.altimetrik.com/" target="_blank"><%= image_tag("clientlogo4.png", size: "160x120", alt: "ALTIMETRIK", class: 'img img-responsive') %><h5><b>ALTIMETRIK</b></h5></a>
+        </div>
+
+
+        </div><!--/row-fluid-->
+    </div><!--/item-->
+     
+    
+     
+    </div><!--/carousel-inner-->
+     
+    <a class="left carousel-control"  href="#myCarousel" data-slide="prev">‹</a>
+    <a class="right carousel-control"  href="#myCarousel" data-slide="next">›</a>
+    </div><!--/myCarousel-->
+     
+    </div><!--/well-->
+  </div>
 				
 			</div><!-- row -->
           </div><!-- container -->
+
+          <!-- ==== SECTION DIVIDER4 -->
        <section class="section-divider textdivider divider4">
 			
 				<h1>PERFORMANCE DELIVERED</h1>
 				<hr>
-				<p>We do not make deals, We build relations.  </p>
+				<p><b>We do not make deals, We build relations.</b></p>
 			
 		</section><!-- section -->
 
@@ -308,111 +364,34 @@
 
 <!-- ==== CAREER ==== -->
 		<div class="container" id="career" name="career">
-			<br><br><br>
-			<br>
-			<div class="row">
+			<div class="row top-buffer">
 				<h2 class="centered">CAREER</h2>
 				<hr>
 				<br>
-
-				
-
 			</div><!-- row -->
-			
+
 			<div class="row">
-				<div class="col-lg-6 blog-bg">
-					<div class="col-lg-4 centered">
-					<br>
-						<p><img class="img img-circle" src="/assets/career1.jpg" width="60px" height="60px"></p>
-						<h4>Join Our Organization</h4>
-						<!-- <h5>Published Aug 30.</h5> -->
-					</div>
-					<div class="col-lg-8 blog-content">
-						<h2>Apply Here</h2>
-						
-	  
-    
-    <!-- Form -->
-  <form  action="" method="POST" enctype="multipart/form-data" id="contact-form" >
-      <div>
-        <label>
-          <span>Name: *</span>
-          <input placeholder="Enter your name" type="text" tabindex="1" pattern="[a-zA-Z. ]{1,50}" id="contact_name" name="contact[name]" required autofocus>
-        </label>
-      </div>
-      <div>
-        <label>
-          <span>Email: *</span>
-          <input placeholder="Enter your email address" type="email" tabindex="2" id="contact_email" name="contact[email]"  required>
-        </label>
-      </div>
-      <div>
-        <label>
-          <span>Mobile: * </span>
-          <input placeholder="Enter your mobile number" type="tel" tabindex="3" pattern="[0-9]{10}" maxlength="10" id="contact_phone" name="contact[phone]" required>
-        </label>
-      </div>
-
-     <div>
-        <label>
-          <span>Qualification: *</span>
-          <input placeholder="Enter the qualification" type="text" tabindex="4" pattern="[a-zA-Z. ]{1,50}" id="contact_qualification" name="contact[qualification]" required autofocus>
-        </label>
-      </div>
-      <div>
-        <label>
-          <span>Upload Resume: *</span>
-          <input placeholder="Upload a file" type="file" tabindex="5" pattern="[a-zA-Z. ]{1,50}" id="contact_file" name="contact[file]" required autofocus>
-        </label>
-      </div>
-      <div>
-        <button name="submit" type="submit" id="contact-submit" name="commit">Submit</button>
-      </div>
-  </form> 
-    <!-- /Form -->
-    
-    
- 
-
-  <script src="/assets/contact.js"></script>
-
-						<!-- <p><a href="#" class="icon icon-link"> Read More</a></p> -->
-						<br>
-					</div>
-				</div><!-- /col -->
 				
-				<div class="col-lg-6 blog-bg">
-					<div class="col-lg-4 centered">
-					<br>
-						<p><img class="img img-circle" src="/assets/career2.png" width="60px" height="60px"></p>
-						<h4>Current Job</h4>
-						<!-- <h5>Published Aug 28.</h5> -->
+				
+				<div class="col-sm-12 col-lg-12 col-xs-12 blog-content">
 
-					<br><br><br><br>
-						<p><img class="img img-circle" src="/assets/career3.jpg" width="60px" height="60px"></p>
-						<!-- <h4>Current Job</h4> -->
-						<!-- <h5>Published Aug 28.</h5> -->
-					
-					</div>
+					<div class="col-sm-9 col-lg-9 bottom_buffer">					
 
-					<div class="col-lg-8 blog-content">
-						<h2>Lead Your Own Destiny</h2>
-				<ul id="career_ul">                
-                <li><a href="http://www.pravestech.ca/CareerDetail.aspx#SBC">SAP Basis Consultant</a> </li>
-                <li><a href="http://www.pravestech.ca/CareerDetail.aspx#HR">SAP HR</a> </li>
-                <li><a href="http://www.pravestech.ca/CareerDetail.aspx#SSAP">SAP Security Senior Consultant</a> </li>
-                <li><a href="http://www.pravestech.ca/CareerDetail.aspx#BI">Senior Business Intelligence Developer–ArcGIS</a>
-                </li>
-                <li><a href="http://www.pravestech.ca/CareerDetail.aspx#STQA">Software Testing and QA Analyst</a> </li>
-                <li><a href="http://www.pravestech.ca/CareerDetail.aspx#BPC">SAP BPC Project Manager/Solution Architect</a>
-                </li>
-                </ul>
-
-                       <H2>Working at PRAVES</H2>
+                       <h3>Working at PRAVES</h3>
                        <P>Praves Technologies builds strong relations with employees based on mutual trust and respect. Our strength lies in our highly skilled and motivated work force. We look forward to have people with talent, inspiration and sense of adventure for taking themselves and lead to company growth as well.
                        </P>
 											<!-- <p><a href="#" class="icon icon-link"> Read More</a></p> -->
-						<br><br>
+						
+					</div>
+					<div class="col-lg-1">
+
+					</div>
+					<div class="col-sm-3 col-lg-2">
+					<br>	
+						<h4><a href="/static_pages/career"><button type="button"  class="btn btn-info btn-block regular-link" > <span class="text">Join Our Organization</span></button></a></h4>
+						<h4><a href="/static_pages/career"><button type="button"  class="btn btn-info btn-block regular-link" > <span class="text">Current Jobs</span></button></a></h4>
+						
+						
 					</div>
 
 				</div><!-- /col -->
@@ -420,331 +399,127 @@
 			<br>
 			</div><!-- container -->
 		
-		<!-- ==== SECTION DIVIDER3 -->
+		<!-- ==== SECTION DIVIDER5 -->
 		<section class="section-divider textdivider divider5">
-			<div class="container">
-				<br><br><br><br><br><br>
+			<!-- <div class="container">
+				<br><br><br><br><br><br> -->
 				<h1>OPPORTUNITIES TO CLIMB GREATER HEIGHTS</h1>
-				
-			</div><!-- container -->
+				<hr>
+				<P><b>Lets work together and explore opportunities.</b></P>
+			<!-- </div> --><!-- container -->
 		</section><!-- section -->
 		
 
-
-		
-<!-- ==== COMMUNITY ==== -->
-		<div class="container" id="community" name="community">
-		<br><br><br>
-			<div class="row">
-				<br>
-				<h1 class="centered">CORPORATE SOCIAL RESPONSIBILITY</h1>
-				<hr>				
-			</div><!-- /row -->
-			<div class="row" id="community_style">	
-			<div class="col-lg-12">		
-				<H3>AKSHAR Welfare Society</H3>
-				<P align="justify">AKSHAR was founded by our CEO – Avneesh Gupta in June 2009. AKSHAR is an India based Non-Profit Organization with the mission to ensure that every extremely poor child is in school and learning well. AKSHAR Initiatives is providing multiple solutions for bringing quality to elementary education in extremely poor areas of India. AKSHAR is an acronym for 'Activists for Knowledge Stimulated Harmony and Advancement in Rural areas'. AKSHAR has an approach of replicable, comprehensive, scalable and cost-effective education solutions. Currently, AKSHAR works in the interior villages of Uttar Pradesh and Bihar provinces of Inda, and will soon expand its work to reach the entire state of India through its close partnership with the various successful professionals and organizations.All Akshar’s programs are child-centric and are designed to ensure that:</P>
-		<ul>
-			<li>Enrollment of children from extremely poor family in schools increase.</li>
-			<li>Dropouts from schools decrease.</li>
-			<li>Children’s learning outcomes, leadership qualities and overall development improve.</li>
-		</ul>
-
-		</div>
-
-			<div class="col-lg-7">				
-						
-					<!-- <div class="col-lg-12 blog-content"> -->
-			<h3>AKSHAR’s Objectives</h3>
-	<p><ul align="justify">
-			<li>Run Class-room teaching programs for the underprivileged children in rural areas who don’t have access to quality education.</li>
-			<li>Provide supplemental cultural, moral and extra-curricular education to underprivileged children who don’t get proper informal education from at their home due to poverty and illiteracy in their family.</li>
-			<li>Help the most poverty-ridden section of the society by distributing basic amenities like food and clothing through its planned distribution drives.</li></ul></p>
-						
-			<!-- <p><a href="#" class="icon icon-link"> Read More</a></p> -->
-						
-					</div>
-		<div class="col-lg-5" id="community_img1">
-			<p><img class="img" src="/assets/community1.jpg"></p>	
-		</div>
-
-		<div class="col-lg-12" id="community_col-lg-4">
-        <h3>AKSHAR’s Objectives</h3>
-
-        <!-- PORTFOLIO IMAGE 1 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d56436.2935559481!2d79.895651!3d27.863026000000005!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xaeca83a0c5e6fb37!2sAkshar+Welfare+Society!5e0!3m2!1sen!2sus!4v1405578563345" width="400" height="350" frameborder="0" style="border:0"></iframe>							
-					<h5 align="center">AKSHAR<br>Azizganj,Shahjahanpur.<br>Uttar Pradesh 242001.<br>India +91 97 94 139955</h5>		
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-
-				<!-- PORTFOLIO IMAGE 2 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d57649.176546415416!2d81.87907!3d25.435805!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x60b4efd98cb3eaab!2sAKSHAR+Welfare+Society!5e0!3m2!1sen!2sus!4v1405580116206" width="400" height="350" frameborder="0" style="border:0"></iframe>
-					<h5 align="center">AKSHAR<br>Triveni Rd, Daraganj,Allahabad<br>Uttar Pradesh.<br>India +91 97 94 139955</h5>	
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				<!-- MAP IMAGE 3 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d923872.0442804325!2d83.841417!3d25.241129!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x88970de2e23d7631!2sAKSHAR+Welfare+Society!5e0!3m2!1sen!2sus!4v1405580285886" width="400" height="350" frameborder="0" style="border:0"></iframe>							
-					<h5 align="center">AKSHAR<br>Village - Akawani, Sasaram, Karakat<br>Bihar 821115.<br>India +91 97 94 139955</h5>
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-			</div><!-- /row -->
-		</div>
-
-				<!-- </div> --><!-- /col -->
-			</div><!-- /row -->
-			
-				
-			<br>
-			<br>
-		
-	
-
-		<!-- ==== SECTION DIVIDER4 ==== -->
-		<!-- <section class="section-divider textdivider divider4">
-			<div class="container">
-				<h1>DESIGN CREATES EMOTIONAL CONNECTION</h1>
+<!-- ==== TEAM ==== -->
+		<!-- <div class="container" id="team" name="team">
+			<div class="row white centered top-buffer">
+				<h2 class="centered">HERE IS OUR TEAM</h2>
 				<hr>
-				<p>There’s more to design than meets the eye. It’s when it meets the heart that design creates a meaningful, lasting connection with the audience.</p>
+				<br>
+				<br>
+						<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+				<div class="col-lg-3 centered">
+					<img class="img img-rounded" src="/assets/team01.jpg" height="120px" width="120px" alt="">
+					<br>
+					<h4><b>Mike Arney</b></h4>
+					<a href="#" class="icon icon-twitter"></a>
+					<a href="#" class="icon icon-facebook"></a>
+					<a href="#" class="icon icon-flickr"></a>
+					<p>Mike combines an expert technical knowledge with a real eye for design. Working with clients from a wide range of industries, he fully understands client objectives when working on a project, large or small.</p>
+				</div>
+				
+				<div class="col-lg-3 centered">
+					<img class="img img-rounded" src="/assets/team01.jpg" height="120px" width="120px" alt="">
+					<br>
+					<h4><b>Tim Davies</b></h4>
+					<a href="#" class="icon icon-twitter"></a>
+					<a href="#" class="icon icon-facebook"></a>
+					<a href="#" class="icon icon-flickr"></a>
+					<p>Tim is an experienced marcoms practitioner and manages projects from inception to delivery. He understands the synergy between great design and commercial effectiveness which shines through on every project.</p>
+				</div>
+				
+				<div class="col-lg-3 centered">
+					<img class="img img-rounded" src="/assets/team01.jpg" height="120px" width="120px" alt="">
+					<br>
+					<h4><b>Michele Lampa</b></h4>
+					<a href="#" class="icon icon-twitter"></a>
+					<a href="#" class="icon icon-facebook"></a>
+					<a href="#" class="icon icon-flickr"></a>
+					<p>Be a creative director is a hard task, but Michele loves what she does. Her combination of knowledge and expertise is an important pillar in our agency.</p>
+				</div>
+				
+				<div class="col-lg-3 centered">
+					<img class="img img-rounded" src="/assets/team01.jpg" height="120px" width="120px" alt="">
+					<br>
+					<h4><b>Jaye Smith</b></h4>
+					<a href="#" class="icon icon-twitter"></a>
+					<a href="#" class="icon icon-facebook"></a>
+					<a href="#" class="icon icon-flickr"></a>
+					<p>Jaye began making websites when animated logos and scrolling text were cool, but has since found a love for simplicity, creating websites that are a pleasure to browse. Monkey Island Fan.</p>
+				</div>
+				
 			</div>
-		</section> --><!-- section -->
-	</div><!-- /container -->
-
-		<!-- ==== INDUSTRIES ==== -->
-		<div class="container" id="industries" name="industries">
-		<br><br><br>
-
-			<div class="row">
-				<br>
-				<h1 class="centered">INDUSTRIES</h1>
-				<hr>
-				<br>
-				
-			</div><!-- /row -->
+			<br>
+			<br>
+			<br>
+			<br>
+		</div> -->
 			
-			<P>Our experienced professionals come from multiple industrial domains. They have worked globally and understand the nuances of offshore-onshore model, delivery approaches, cultural sensitivities. Our software professionals have experience working in following various Industries like:</P>
-			<div class="row">	
 			
-				
-				
-				
-						 <!-- MODAL SHOW THE PORTFOLIO IMAGE. In this demo, all links point to this modal. You should create
-						      a modal for each of your projects. -->
-						      
-						  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-						    <div class="modal-dialog">
-						      <div class="modal-content">
-						        <div class="modal-header">
-						          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-						          <h4 class="modal-title">Project Title</h4>
-						        </div>
-						        <div class="modal-body">
-						          <p><img class="img-responsive" src="/assets/industry_investment_banking.jpg" alt=""></p>
-						          <p>This project was crafted for Some Name corp. Detail here a little about your job requirements and the tools used. Tell about the challenges faced and what you and your team did to solve it.</p>
-						          <p><b><a href="#">Visit Site</a></b></p>
-						        </div>
-						        <div class="modal-footer">
-						          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-						        </div>
-						      </div><!-- /.modal-content -->
-						    </div><!-- /.modal-dialog -->
-						  </div><!-- /.modal -->
-				
-				<!-- PORTFOLIO IMAGE 1 -->
-				<div class="col-md-4 ">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="/assets/industry_oil_gas.jpg" alt="">
-							<figcaption>
-								<h5>OIL AND GAS</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-
-				<!-- PORTFOLIO IMAGE 2 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="/assets/industry_investment_banking.jpg" alt="">
-							<figcaption>
-								<h5>INVESTMENT BANKING</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				<!-- PORTFOLIO IMAGE 3 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="/assets/industry_insurance.jpg" alt="">
-							<figcaption>
-								<h5>INSURANCE</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-			</div><!-- /row -->
-
-				<!-- PORTFOLIO IMAGE 4 -->
-			<div class="row">	
-				<div class="col-md-4 ">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="/assets/industry_data_analytics.jpg" alt="">
-							<figcaption>
-								<h5>DATA ANALYTICS</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				<!-- PORTFOLIO IMAGE 5 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="/assets/industry_hr_firms.jpg" alt="">
-							<figcaption>
-								<h5>HR FIRMS</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-				
-				<!-- PORTFOLIO IMAGE 6 -->
-				<div class="col-md-4">
-			    	<div class="grid mask">
-						<figure>
-							<img class="img-responsive" src="/assets/industry_education_industry.jpg" alt="">
-							<figcaption>
-								<h5>EDUCATION INDUSTRY</h5>
-								<a data-toggle="modal" href="#myModal" class="btn btn-primary btn-lg">Take a Look</a>
-							</figcaption><!-- /figcaption -->
-						</figure><!-- /figure -->
-			    	</div><!-- /grid-mask -->
-				</div><!-- /col -->
-			</div><!-- /row -->
-			<br>
-			<br>
-			<br>
-			<br>
+			
 		
-		
-	         </div><!-- /container -->
 		
 
 <!-- ==== CONTACT ==== -->
 
 		<div class="container" id="contact" name="contact">
-			<div class="row">
-			<br><br><br>
-				<h1 class="centered">THANKS FOR VISITING US</h1>
+			<div class="row top-buffer">
+				<h2 class="centered">THANKS FOR VISITING US</h2>
 				<hr>
-				<div class="col-lg-4">
+				<div class="col-lg-1 col-sm-1">
+				</div>
+				<div class="col-lg-4 col-sm-4">
 					<h4>Contact Information</h4>
-					<p><span class="icon icon-home"></span> <b>Address 1</b><br> 
-					Bankers Hall, West Tower
-					10th Floor, 888-3 Street SW
-					Calgary, AB T2P 5C5
-					Canada.<br/>
-						<span class="icon icon-home"></span><b>Address 2</b><br>
+					<p>
+					<span class="icon icon-home"></span><b>Address</b><br>
 					Sun Life Plaza, West Tower
 					144-4 Avenue SW, Suite 1600
 					Calgary, AB T2P 3N4
-					Canada. 
-						<span class="icon icon-phone"></span> +14034620868  <br/>
-						<!-- <span class="icon icon-mobile"></span> +34 59855 9853 <br/> -->
-						<span class="icon icon-envelop"></span> <a href="#"> email@pravestech.ca</a> <br/>
-						<span class="icon icon-twitter"></span> <a href="#"> twitter </a> <br/>
-						<span class="icon icon-facebook"></span> <a href="https://www.facebook.com/PravesTechnologies">Praves Technologies</a> <br/>
+					Canada.<br> 
+					<span class="icon icon-phone"></span> +14034620868  <br/>
+					<!-- <span class="icon icon-mobile"></span> +34 59855 9853 <br/> -->
+					<span class="icon icon-envelop"></span> email@pravestech.ca <br/>
+					
+					<a target="_blank" href="https://www.linkedin.com/company/praves-technologies-ltd-?"><span id="logo_in"><%= image_tag("logo_linkedin.png", alt: "LinkedIn") %></span> </a>
+					
+					<a target="_blank" href="https://www.facebook.com/PravesTechnologies"><span id="logo_fb"><%= image_tag("logo_facebook.png", alt: "Facebook") %></span> </a> <br/>
 					</p>
 				</div><!-- col -->
 				
-				<div class="col-lg-4">
-					<h4>Reach Us</h4>
-					<p>Contact Us to know more about us and to get our quote.</p>
-					
-	<div id="full_form">    
-    
-    <!-- Form -->
-  <form  action="" method="POST" enctype="multipart/form-data" id="contact-form" >
-      <div>
-        <label>
-          <span>Name: *</span>
-          <input placeholder="Enter your name" type="text" tabindex="1" pattern="[a-zA-Z. ]{1,50}" id="contact_name" name="contact[name]" required autofocus>
-        </label>
-      </div>
-      <div>
-        <label>
-          <span>Email: *</span>
-          <input placeholder="Enter your email address" type="email" tabindex="2" id="contact_email" name="contact[email]"  required>
-        </label>
-      </div>
-      <div>
-        <label>
-          <span>Mobile: * </span>
-          <input placeholder="Enter your mobile number" type="tel" tabindex="3" pattern="[0-9]{10}" maxlength="10" id="contact_phone" name="contact[phone]" required>
-        </label>
-      </div>
-
-      <div>
-        <label>
-          <span>Message:</span>
-          <textarea placeholder="Include all the details you can" tabindex="4" name="contact[message]" id="contact_message" ></textarea>
-        </label>
-      </div>
-      <div>
-        <button name="submit" type="submit" id="contact-submit" name="commit">Submit</button>
-      </div>
-  </form> 
-    <!-- /Form -->
-					</div>
-				</div><!-- col -->
+				<div class="col-lg-1 col-sm-1">
+				</div>
 				
-				<div class="col-lg-4">
+				<div class="col-lg-6 col-sm-6">
 					<h4>Our Location</h4>
-					<p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d20067.49222289879!2d-114.069923!3d51.045027!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53716ffcc79191d9%3A0x24ed4a97bdfe119c!2s888+3+St+SW%2C+Calgary%2C+AB+T2P%2C+Canada!5e0!3m2!1sen!2sus!4v1405510334679" width="400" height="400" frameborder="0" style="border:0"></iframe></p>
+					<p><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1254.1610603064853!2d-114.0692075!3d51.0471397!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x5ba24dbae70547bd!2sPRAVES+Technologies+Ltd.!5e0!3m2!1sen!2sin!4v1406119267342" width="400" height="300" frameborder="0" style="border:0"></iframe></p>
 				</div><!-- col -->
 
 			</div><!-- row -->
 		</div><!-- container -->
 
-		<!-- ==== SECTION DIVIDER6 ==== -->
+		<!-- ==== SECTION DIVIDER8 ==== -->
 		<section class="section-divider textdivider divider8">
-			<div class="container">
+			<!-- <div class="container"> -->
 				<h1>SITUATED IN CALGARY, CANADA.</h1>
 				<hr>
-				<p>Bankers Hall, West Tower	10th Floor, 888-3 Street</p>
-				<p>+14034620868</p>
-				<p><a class="icon icon-twitter" href="#"></a> | <a class="icon icon-facebook" href="#"></a></p>
-			</div><!-- container -->
+				<p><b>Sun Life Plaza, West Tower, 144-4 Avenue SW, Suite 1600, Calgary<b>
+				<b><span class="icon icon-phone">+14034620868</span><b></p>
+			<!-- </div> --><!-- container -->
 		</section><!-- section -->
 
 		
 
-		<div id="footerwrap">
-			<div class="container">
-				<h4> <a href="/">Praves Technologies Ltd.</a> - Copyright &copy; 2014</h4>
-			</div>
-		</div>
+		
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -756,6 +531,7 @@
 	<script type="text/javascript" src="/assets/jquery.easing.1.3.js"></script>
     <script type="text/javascript" src="/assets/smoothscroll.js"></script>
     <script type="text/javascript" src="/assets/jquery-func.js"></script>
+    <script type="text/javascript" src="/assets/contact.js"></script>
 
 	
   </body>

@@ -1,11 +1,10 @@
 /*
- * Author: Carlos Alvarez
- * URL: http://Alvarez.is
+ * Author: Praves technologies
+ * URL: http://www.pravestech.ca/
  *
- * Project Name: SHIELD - Free Bootstrap 3 Theme
- * Version: 1.0
- * Date: 02-11-2013
- * URL: http://blacktie.co/
+ * Project Name: Praves Technology
+ * Date: 10-07-2014
+ * URL: http://www.pravestech.ca/
  */
 
 
@@ -63,6 +62,7 @@ body {
 
  img {
     vertical-align: middle;
+
 }
 
 /*
@@ -84,10 +84,10 @@ body {
 }
 
 body {
-    font-family: "Lato";
+    font-family: 'Open Sans', 'HelveticaNeue', 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-weight: 300;
     font-size: 16px;
-    color: #555;
+    color: #313131;
 
     -webkit-font-smoothing: antialiased;
     -webkit-overflow-scrolling: touch;
@@ -99,7 +99,7 @@ body {
 
 .row {
 margin-right: 0px;
-margin-left: -15px;
+margin-left: -3px;
 }
 
 .modal-header {
@@ -150,7 +150,7 @@ hr:before {
 }
 
 a img {
-    background: #DDD7D7;
+    background: none;
 }
 
 .odd a img {
@@ -161,7 +161,7 @@ a img {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Raleway";
     font-weight: 700;
-    color: #333;
+    color: #000000;    
 }
 
 
@@ -169,6 +169,7 @@ h1, h2, h3, h4, h5, h6 {
 p {
     line-height: 25px;
     margin-bottom: 25px;
+
 }
 
 .centered {
@@ -264,6 +265,13 @@ a:after {
     transition: color 0.1s ease-in, background 0.1s ease-in;
 }
 
+.top-buffer {
+     margin-top:4em; 
+}
+
+.bottom_buffer {
+    margin-bottom: 2em;
+}
 
 
 /* ==========================================================================
@@ -271,7 +279,7 @@ a:after {
    ========================================================================== */
 
 #headerwrap {
-	background: url(../assets/header_bg.jpg) no-repeat center top;
+	/*background: url(../assets/header_background.jpg) no-repeat center top;*/
     margin-top: -65px;
     /*padding-top:120px;*/
     text-align:center;
@@ -279,7 +287,7 @@ a:after {
     background-position: center center;
     min-height: 732px;
     width: 100%; 
-    height: 100% 
+    height: 100%; 
 	
     -webkit-background-size: 100%;
     -moz-background-size: 100%;
@@ -291,6 +299,7 @@ a:after {
     -o-background-size: cover;
     background-size: cover;
 }
+
 
 #headerwrap h1 {
 	color:#ffffff;
@@ -313,10 +322,31 @@ a:after {
 	text-shadow: 1px 1px 1px #000;
 }
 
-#service_home {
-    margin-top: -11.5%;
-    opacity: 0.8;
+
+#h_bg {
+    margin-top: 4em;
+    text-align:center;
+    background-attachment: relative;
+    background-position: center center;
+    /*min-height: 615px;*/
+    width: 100%; 
+    height: 100%; 
+    
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
+
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
+#home_carousel {
+    position: relative;
+    
+}
+
 
 #greywrap {
     background: #f5f5f5;
@@ -376,9 +406,9 @@ a:after {
 .section-divider {
     z-index: 999;
     width: 100%;
-    display: table;
+    display: block;
     max-height: 450px;
-    border-bottom: 2px solid #E6EAED;
+    /*border-bottom: 2px solid #E6EAED;*/
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -405,9 +435,6 @@ a:after {
     text-align: center;
 }
 
-#about_section_divider {
-    margin-top: 5px;
-}
 
 .textdivider h1 {
 	padding-top: 40px;
@@ -424,34 +451,75 @@ a:after {
 /* Section Dividers Backgrounds */
 
 .divider1 {
-	background-image: url('../assets/bg/divider1.jpg')
+	background-image: url('../assets/bg/divider1.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 
 .divider2 {
-	background-image: url('../assets/bg/divider2.jpg')
+	background-image: url('../assets/bg/divider2.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 .divider3 {
-    background-image: url('../assets/bg/divider3.jpg')
+    background-image: url('../assets/bg/divider3.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 .divider4 {
-    background-image: url('../assets/bg/divider4.jpg')
+    background-image: url('../assets/bg/divider4.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 
 .divider5 {
 	background-image: url('../assets/bg/divider5.jpg');
 	margin-top: 0px;
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
 
 .divider6 {
 	background-image: url('../assets/bg/divider6.jpg')
 }
 .divider7 {
-    background-image: url('../assets/bg/divider7.jpg')
+    background-image: url('../assets/bg/divider7.jpg');    
 }
 
 .divider8 {
-	background-image: url('../assets/bg/divider8.jpg')
+	background-image: url('../assets/bg/divider8.jpg');
+    background-repeat: no-repeat;
+    -webkit-background-size: 100%;
+    -moz-background-size: 100%;
+    -o-background-size: 100%;
+    background-size: 100%;
 }
+
+.divider_service {
+    background-image: url('../assets/bg/divider_service.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
 
 
 
@@ -630,51 +698,137 @@ a:after {
 	background: #f2f2f2;
 }
 
-
-/* ==========================================================================
-   Register and Login section
-   ========================================================================== */
-
-
-#reg-id {
-    margin-left: 70%;
-    position: absolute;
+.head-bg {
+    background: #E2E2F1;
+    text-align: center;
 }
 
-#login-id {
-    margin-left: 77%;
-    position: absolute;
+.head-bg1 {
+    background: #E2E2F1;
+    border-radius: 5px;
+}
+
+/* ==========================================================================
+   Some Other Part Section
+   ========================================================================== */
+
+.back_effect {
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    text-align: center;    
+    border: .1em solid rgb(200, 200, 216);
+    color: blue;
+    background: rgba(44, 38, 38, 0.15);
+    padding-top:1.25em;
+    position: relative;
+    z-index: 1;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration:2s;
+    -o-transition-duration:2s;
+}
+
+
+#greywrap_link .back_effect:hover {
+ 
+    display: inline-block;
+    cursor: pointer;
+    margin: 15px;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background: #0098f9;
+    padding-top:1.25em;
+    box-shadow: 0 0 0 0.4em #fff, 0 0 0 0.5em #0098f9;
+    z-index: 1;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration:2s;
+    -o-transition-duration:2s;
+}
+
+#greywrap_link1 .back_effect:hover {
+ 
+    display: inline-block;
+    cursor: -webkit-grab;
+    margin: 15px;
+    width: 105px;
+    height: 105px;
+    border-radius: 50%;
+    text-align: center;
+    position: relative;
+    color: #fff;
+    background: #0098f9;
+    padding-top:1.25em;
+    box-shadow: 0 0 0 0.4em #fff, 0 0 0 0.5em #0098f9;
+    z-index: 1;
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 0.2s;
+    -moz-transition-duration:2s;
+    -o-transition-duration:2s;
+}
+
+
+
+/* ==========================================================================
+   Navbar Section
+   ========================================================================== */
+
+#navbar_logo {
+  /*margin-left: -4em;
+    margin-top: -0.20em;
+    margin-right: 2em;*/
+    margin: -0.20em 3em 0em -1.5em;
+    
+}
+
+#navbar_quote {
+        margin-left: 15em;
+        margin-top: -0.3em;
+    }
+
+#navbar_quote_collapse {
+    margin-left: 1em;
+    margin-top: 1.5em;
+}
+
+#myModal .modal-content {
+    width: 80%;
+}
+
+
+
+
+/* ==========================================================================
+   Clients section
+   ========================================================================== */
+
+#client_carousel .carousel-control {
+    width: 5%;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    opacity: 0.9;
+    background-image: none;
+    color: rgb(114, 114, 114);
+
+}
+#client_carousel .carousel {
+    padding-top: 1em;
+}
+
+#client_carousel .carousel-indicators {
+    display: none;
 }
 
 /* ==========================================================================
    Career Section
    ========================================================================== */
 
-#career_ul {
-    margin-left: 20px;
-}
-
-/* ==========================================================================
-   Community Section
-   ========================================================================== */
-
-#community_style {
-    font-family: "sans-serif";
-    font-weight: 300;
-    font-size: 14px;
-    color: #555;
-    -webkit-font-smoothing: antialiased;
-    -webkit-overflow-scrolling: touch;
-}
-
-#community_img1 {
-    margin-top: -8%;
-}
-
-#community_col-lg-4 .col-md-4 {
-    background: #F2F2F2;
-    padding: 20px !important ;
-}
 
 /* ==========================================================================
    Contact Section
@@ -694,11 +848,87 @@ a:after {
 }
 
 #full_form #contact-form button[type="submit"] {
-    width: 91%;
+    width: 25em;
     background-image:linear-gradient(bottom, #838CD3 0%, #8BA1E9 52%);
     background-image:-moz-linear-gradient(bottom, #838CD3 0%, #8BA1E9 52%);
     background-image:-webkit-linear-gradient(bottom, #838CD3 0%, #8BA1E9 52%);
     }
+
+#logo_fb img {
+    background: #000;
+    border-radius: 50%;
+}
+
+#logo_in img {
+    background: #000;
+    border-radius: 50%;
+}
+
+#logo_fb:hover img {
+    background: #0098f9;
+    border-radius: 50%;
+}
+
+#logo_in:hover img {
+    background: #0098f9;
+    border-radius: 50%;
+}
+
+/* ==========================================================================
+   STATIC_PAGES / SERVICES
+   ========================================================================== */
+
+#service_head {
+    padding-top: 12%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#service_head .row {
+    margin-left: 0px;
+}
+
+
+
+#service_content {
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+#service_content .bs-example.bs-example-tabs {
+    background: yellow;
+    background: #E2E2F1;
+}
+#service_content .container {
+    width: auto;
+    text-align: justify;
+}
+
+#service_head #service_link:hover {
+    -webkit-transform: scale(1.07,1.07);
+    -webkit-transition-timing-function: ease-in-out;
+    -webkit-transition-duration: 250ms;
+    -moz-transform: scale(1.07,1.07);
+    -moz-transition-timing-function: ease-in-out;
+    -moz-transition-duration: 500ms;
+    position: relative;
+    z-index: 99;
+    overflow: hidden; 
+}
+
+
+#training .row {
+    text-align: center;
+}
+
+/* ==========================================================================
+   STATIC_PAGES / CAREER
+   ========================================================================== */
+   #form_id {
+    padding-top: 1em;
+    padding-bottom: 1em;
+   }
+
 
 /* ==========================================================================
    MEDIA QUERIES
@@ -713,15 +943,302 @@ a:after {
 /*ipad portrait*/
 @media only screen and (min-device-width:768px) and (max-device-width : 1024px) and (orientation : portrait){
 	.header{background-attachment: scroll;}
+
+/*#navbar_reg {
+        margin-left: -2em;
+    }*/
+
 }
 
-@media screen and (max-width:769px) {
-	#headerwrap h1 {
-		font-size: 80px;
-	}
-	#headerwrap p {
-		font-size: 30px;
-		line-height: 38px;
-	}
+/* ===== Navbar ===== */
+@media (min-width: 992px) and (max-width: 1199px)  {
+
+     #navbar_quote {
+        margin-left: 4em;
+    }
+    #navbar_logo {
+        margin: -0.20em 0em 0em -1em;
+    }
+    .navbar-nav {
+        float: right;
+    }
 }
+
+
+@media (min-width: 768px) and (max-width: 991px)  {
+  
+    #navbar-main .navbar-nav a {
+      font-size: 12px;
+      font-weight: 900;
+    }
+    #navbar-main .nav li a {
+        padding-left: 0.7em;
+        padding-right: 0.7em;
+    }
+
+    #navbar_quote {
+        margin-left: 1.9em;
+    }
+    #navbar_logo {
+        margin: -0.20em 0em 0em 0em;
+    }
+    .navbar-nav {
+        float: left;
+    }
+}
+
+
+
+@media (max-width: 767px) {
+    #navbar_color1 {
+        background-color: #1A1A1A;
+    }
+    #navbar_color2 {
+        background-color: #222;
+    }
+     #navbar_reg {
+        background-color: #1A1A1A;
+        margin:0 auto;
+    }
+    #navbar_log {
+        background-color: #222;
+    }
+}
+
+/* ===== Navbar End ===== */
+
+/* ===== Font ===== */
+
+@media screen and (min-width: 320px) and (max-width: 768px) {
+  h1 {
+    font-size: 26px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+  h3 {
+    font-size: 18px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+    
+    #headerwrap p {
+        font-size: 25px;
+        line-height: 35px;
+    }
+}
+
+@media screen and (max-width: 319px) {
+ 
+  h1 {
+    font-size: 22px;
+  }
+
+  h2 {
+    font-size: 16px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  h4 {
+    font-size: 14px;
+  }
+  h5 {
+    font-size: 12px;
+  }
+  h6 {
+    font-size: 10px;
+  }
+   
+  p {
+    font-size: 14px;
+  }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 991px ) {
+
+    .textdivider h1 {
+        padding-top: 30px;        
+        font-size: 26px;
+}
+
+    .textdivider p {        
+        font-size: 22px;
+}
+
+}
+
+
+@media screen and (min-width: 541px) and (max-width: 767px ) {
+
+    .textdivider h1 {
+        /*padding-top: 30px;*/        
+        font-size: 22px;
+}
+    .textdivider p {        
+        font-size: 18px;
+}
+
+}
+
+
+@media screen and (min-width: 320px) and (max-width: 540px ) {
+
+    .textdivider h1 {
+        /*padding-top: 30px;*/        
+        font-size: 14px;
+}
+    .textdivider p {        
+        font-size: 12px;
+}
+}
+
+@media screen and (max-width: 319px ) {
+    .textdivider h1 {        
+        font-size: 12px;
+}
+}
+
+/* ===== Font End ===== */
+
+/* ===== Section Dividers ===== */
+
+@media screen and (min-width: 768px) and (max-width: 888px) {
+    
+.section-divider {
+
+    padding-bottom: 30px;
+}
+}
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+    
+.section-divider {
+    padding-top: 0px;
+    padding-bottom: 30px;
+    margin-top: 1em;
+}
+}
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+    
+.section-divider {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 5px;
+}
+
+hr {
+     margin: 0.1em 0;
+}
+
+.textdivider h1 {
+    padding-top: 20px;
+}
+}
+
+@media screen and (max-width: 319px) {
+
+.section-divider {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: -30px;
+}
+
+hr {
+     height: 0px;
+     margin: 0.1em 0;
+}
+
+.textdivider h1 {
+    padding-top: 20px;
+
+}
+h3 {
+    margin-bottom: -1px;
+}
+}
+
+
+
+/* ===== Section Dividers End ===== */
+/* ===== iFrame ===== */
+
+@media screen and (min-width: 768px) and (max-width: 888px) {
+
+iframe {
+    width: 300px;
+    height: 250px;
+}
+}
+
+@media screen and (min-width: 320px) and (max-width: 450px) {
+
+iframe {
+    width: 270px;
+    height: 200px;
+}
+}
+
+@media screen and (max-width: 319px) {
+
+iframe {
+    width: 215px;
+    height: 200px;
+}
+}
+
+/* ===== iFrame End ===== */
+
+/* ===== Modal ===== */
+
+@media screen and (max-width: 767px ) {
+#myModal .modal-content {
+    width: 65%;
+}
+}
+
+/* ===== Modal End ===== */
+
+
+
+
+
+
+
+
+/* ===== Static_Pages/Career ===== */
+
+@media screen and (min-width: 320px) and (max-width: 540px) {
+#service_head {
+    padding-top: 30%;
+}
+}
+
+@media screen and (min-width: 541px) and (max-width: 767px) {
+#service_head {
+    padding-top: 25%;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+#service_head {
+    padding-top: 18%;
+}
+}
+
+/* ===== Static_Pages/Career End ===== */
+
+
+
 
